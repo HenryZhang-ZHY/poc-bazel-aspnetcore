@@ -1,0 +1,10 @@
+load("@rules_dotnet//dotnet:defs.bzl", "csharp_nunit_test")
+
+csharp_nunit_test(
+    name = "LibA2.Test",
+    srcs = ["AdvancedCalculatorTests.cs"],
+    target_frameworks = ["net10.0"],
+    deps = [
+        "//src/LibA2",
+    ],
+)

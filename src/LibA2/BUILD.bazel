@@ -1,0 +1,11 @@
+load("@rules_dotnet//dotnet:defs.bzl", "csharp_library")
+
+csharp_library(
+    name = "LibA2",
+    srcs = ["AdvancedCalculator.cs"],
+    target_frameworks = ["net10.0"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//src/LibA",
+    ],
+)
