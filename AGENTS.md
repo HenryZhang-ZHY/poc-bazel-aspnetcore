@@ -1,0 +1,1 @@
+- All knowledge are stored in the `knowledge-base` directory. The entry point is [index.md](knowledge-base/index.md).
